@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Buscador Inteligente</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 60px;
+    }
+    input {
+      padding: 10px;
+      width: 300px;
+      font-size: 16px;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Buscador Inteligente de Produtos</h1>
+  <p>Encontre produtos na Amazon Brasil rapidamente.</p>
+
+  <form action="https://www.amazon.com.br/s" method="GET">
+    <input type="text" name="k" placeholder="Digite o produto" required>
+    <input type="hidden" name="tag" value="SUA_TAG_AQUI">
+    <button type="submit">Buscar</button>
+  </form>
+
+  <p style="margin-top:40px; font-size: 14px;">
+    Este site participa do Programa de Associados da Amazon Brasil e pode receber comissão por compras qualificadas.
+  </p>
+
+</body>
+</html>
